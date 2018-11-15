@@ -6,6 +6,7 @@ body, html{
     font-weight: 400px;
     line-height: 1.8em;
     color:#666;
+
 }
 .pimg1, .pimg2, .pimg3{
     position:relative;
@@ -13,8 +14,9 @@ body, html{
     background-size:cover;
     background-repeat:no-repeat;
     background-attachment: fixed;
-  }
+    filter:brightness(50%);
 
+  }
 .pimg1{
     background-image:url('../img/image1.jpg');
     min-height: 100%;
@@ -26,11 +28,6 @@ body, html{
 .pimg3{
     background-image:url('../img/image3.jpg');
     min-height: 100%;
-}
-
-.section{
-    text-align:center;
-    padding:50px 80px;
 }
 
 .ptext{
@@ -45,8 +42,8 @@ body, html{
  h1{
     display: block;
     font-size: 2em;
-    margin-block-start: -7em;
-    margin-block-end: 0.67em;
+    margin-block-start: auto;
+    margin-block-end: auto;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
@@ -63,11 +60,9 @@ h1.Intro{
     margin-block-start: -3em;
 }
 
-
 h2{
-    font-size: 1.5em;
+    font-size: 1em;
     margin-block-start: auto;
-
     font-weight: bold;
     text-align: center;
 }
@@ -85,13 +80,4 @@ p{
     float: left;
     width: 47%;
     padding: 15px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-    padding: 15px;
-
 }
