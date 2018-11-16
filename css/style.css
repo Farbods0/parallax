@@ -10,7 +10,7 @@ body, html{
 }
 .ptext{
     position:absolute;
-    top:50%;
+    top:30%;
     width: 100%;
     text-align:center;
     color:white;
@@ -20,12 +20,13 @@ body, html{
  h1{
     font-family: Open Sans;
     display: block;
-    font-size: 2em;
+    font-size: 1.5em;
     margin-block-start: auto;
     margin-block-end: auto;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;
+    padding: 20px;
  }
 
 
@@ -48,8 +49,15 @@ p{
 }
 .column {
     float: left;
-    width: 25%;
-    padding: 1px;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    padding: 1px
 }
 
 .pimg1, .pimg2, .pimg3, .pimg4{
