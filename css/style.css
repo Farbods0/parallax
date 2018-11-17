@@ -8,6 +8,7 @@ body, html{
     color:#666;
 
 }
+
 .ptext{
     position:absolute;
     top:30%;
@@ -47,19 +48,25 @@ p{
     width: 35em;
     text-align: center;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
 .column {
     float: left;
     width: 50%;
+    margin: 0 auto;
+
 }
 
 /* Clear floats after the columns */
 .row:after {
-    content: "";
-    display: table;
-    clear: both;
-    padding: 1px
-}
+    margin: auto;
+    text-align: center;
 
+}
 .pimg1, .pimg2, .pimg3, .pimg4{
     position:relative;
     background-position:center;
